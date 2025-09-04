@@ -1,0 +1,30 @@
+What use used:
+
+
+
+Basic Workflow:
+git init: Initializes a new Git repository in the current directory.
+git clone <repository_url>: Creates a local copy of a remote Git repository.
+git add <filename> / git add .: Stages changes for the next commit. git add <filename> stages a specific file, while git add . stages all changes in the current directory.
+git commit -m "Commit message": Records staged changes to the local repository with a descriptive message.
+git status: Shows the status of files in the working directory and staging area.
+git push <remote_name> <branch_name>: Uploads committed changes to a remote repository. Common usage is git push origin master or git push origin main.
+git pull <remote_name> <branch_name>: Fetches changes from a remote repository and merges them into the current local branch.
+Branching & Merging:
+git branch: Lists all local branches.
+git branch <new_branch_name>: Creates a new branch.
+git checkout <branch_name>: Switches to a different branch.
+git checkout -b <new_branch_name>: Creates a new branch and switches to it.
+git merge <branch_to_merge>: Merges the specified branch's history into the current active branch. 
+git branch -d <branch_name>: Deletes a local branch (only if merged).
+git push <remote_name> --delete <branch_name>: Deletes a remote branch.
+Inspecting History:
+git log: Displays the commit history.
+git diff: Shows the differences between the working directory and the staging area, or between two commits.
+Undoing Changes:
+git restore <filename>: Discards changes in the working directory for a specific file.
+git reset <commit_hash>: Moves the branch pointer to a specific commit, altering commit history (use with caution).
+git revert <commit_hash>: Creates a new commit that undoes the changes introduced by a specific commit, preserving history.
+Remote Repositories:
+git remote -v: Lists the remote repositories configured for the current local repository.
+git remote add <remote_name> <remote_url>: Adds a new remote repository connection.
